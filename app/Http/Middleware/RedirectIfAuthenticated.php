@@ -25,12 +25,12 @@ class RedirectIfAuthenticated
             switch ($guard) {
             case 'admin';
                 if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::DASHBOARD);
+                    return redirect(RouteServiceProvider::DASHBOARD);
                 }
             break;
             default;
                 if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                    return redirect(RouteServiceProvider::HOME);
                 }
             break;
         }

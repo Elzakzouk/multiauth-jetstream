@@ -1,6 +1,12 @@
 <template>
     <div class="bg-red-300">
-        Hello
+        <ul>
+            <li>
+                <inertia-link :href="route('backend.admins')">
+                    admins
+                </inertia-link>
+            </li>
+        </ul>
     </div>
 </template>
 

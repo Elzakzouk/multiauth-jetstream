@@ -53,10 +53,10 @@ class   Handler extends ExceptionHandler
             switch($guard){
                 case 'admin';
                     $login = 'backend.login';
-                    break;
-                    default;
+                break;
+                default;
                     $login = 'login';
-                    break;
+                break;
             }
         return redirect()->guest(route($login));
     }

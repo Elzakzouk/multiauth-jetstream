@@ -18,6 +18,11 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
+        <noscript>
+            <div class="flex justify-center text-center">
+                <strong>We're sorry but Msadr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+            </div>
+        </noscript>
         @inertia
     </body>
 </html>
